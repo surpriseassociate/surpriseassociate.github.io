@@ -1,4 +1,4 @@
-name: "Jekyll Bootstrap Boilerplate"
-description: "An example Jekyll boilerplate to get you up and running quickly and smoothly"
+name: "Surprise Associate"
+description: "The associate your often didn't know that you had!"
 url: https://surpriseassociate.github.io/
 exclude: [ 'README.md' ]

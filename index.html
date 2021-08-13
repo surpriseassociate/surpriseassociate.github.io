@@ -1,35 +1,42 @@
 ---
 layout: default
 title: "Homepage"
+description: "A place for me to publish my work in an easily perusable way"
+permalink: /
 ---
 <main>
-    <h1>Get started with Bootstrap</h1>
-    <p class="fs-5 col-md-8">Quickly and easily get started with Bootstrap's compiled, production-ready files with this barebones example featuring some basic HTML and helpful links. Download all our examples to get started.</p>
+    <h1>Surprise Associate</h1>
+    <p class="fs-5 col-md-8">The associate you didn't know that you had!</p>
 
     <div class="mb-5">
-      <a href="/docs/5.0/examples/" class="btn btn-primary btn-lg px-4">Download examples</a>
+      <a href="https://github.com/surpriseassociate" class="btn btn-primary btn-lg px-4">Github</a>
     </div>
 
     <hr class="col-3 col-md-2 mb-5">
 
     <div class="row g-5">
       <div class="col-md-6">
-        <h2>Starter projects</h2>
-        <p>Ready to beyond the starter template? Check out these open source projects that you can quickly duplicate to a new GitHub repository.</p>
+        <h2>Show me the code!</h2>
+        <p>I keep all my code neatly organized into multiple surprise companies in Github. The vast majority of my code and work is hidden in private repos, however when somethings deemed appropriately sanitized and public-ready, it's switched to public so that people can benefit from what I've done.</p>
+        <p>You may not be able to see all of my work, but here's a list of my surprise companies that have some interesting files in it for you to peruse:</p>
         <ul class="icon-list">
-          <li><a href="https://github.com/twbs/bootstrap-npm-starter" rel="noopener" target="_blank">Bootstrap npm starter</a></li>
-          <li class="text-muted">Bootstrap Parcel starter (coming soon!)</li>
+          <li><a href='https://github.com/surprise-automation/' rel="noopener" target="_blank">https://github.com/surprise-automation</a>'</li>
+          <li><a href='https://github.com/surprise-boilerplates/' rel="noopener" target="_blank">https://github.com/surprise-boilerplates</a>'</li>
+          <li><a href='https://github.com/surprise-bots/' rel="noopener" target="_blank">https://github.com/surprise-bots</a>'</li>
+          <li><a href='https://github.com/surprise-scripts/' rel="noopener" target="_blank">https://github.com/surprise-scripts</a>'</li>
+          <li><a href='https://github.com/surprise-web/' rel="noopener" target="_blank">https://github.com/surprise-web</a>'</li>
+          <li><a href='https://github.com/surprise-work/' rel="noopener" target="_blank">https://github.com/surprise-work</a>'</li>
         </ul>
       </div>
 
       <div class="col-md-6">
-        <h2>Guides</h2>
-        <p>Read more detailed instructions and documentation on using or contributing to Bootstrap.</p>
+        <h2>Release Reports</h2>
+        <p>I'll often copypasta the README into a post for this site whenever a project is publicized. Here are the most recent 5 posts:</p>
         <ul class="icon-list">
-          <li><a href="/docs/5.0/getting-started/introduction/">Bootstrap quick start guide</a></li>
-          <li><a href="/docs/5.0/getting-started/webpack/">Bootstrap Webpack guide</a></li>
-          <li><a href="/docs/5.0/getting-started/parcel/">Bootstrap Parcel guide</a></li>
-          <li><a href="/docs/5.0/getting-started/build-tools/">Contributing to Bootstrap</a></li>
+          {% for post in site.posts limit 5 %}
+            <li><a href='{{ post.url }}' rel="noopener">{{ post.title }}</a></li>
+          {% endfor %]}
+            <li><a href='{{ posts | absolute_url }}' rel="noopener">Read More</a></li>
         </ul>
       </div>
     </div>

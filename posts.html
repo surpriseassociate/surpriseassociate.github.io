@@ -1,0 +1,17 @@
+---
+layout: default
+title: "Posts"
+description: "All posts published to this blog"
+permalink: /posts/
+---
+<main>
+    <h1>Posts</h1>
+    <h2>Release Reports</h2>
+    <p>I'll often copypasta the README into a post for this site whenever a project is publicized. Here are the most recent 5 posts:</p>
+    <ul class="icon-list">
+        {% for post in site.posts %}
+        <li><a href='{{ post.url }}' rel="noopener">{{ post.title }}</a></li>
+        {% endfor %]}
+        <li><a href='{{ posts | absolute_url }}' rel="noopener">Read More</a></li>
+    </ul>
+  </main>

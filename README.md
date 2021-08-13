@@ -1,2 +1,3 @@
-# jekyll-bootstrap
-A Jekyll Bootstrap
+# Surprise Associate
+
+The associate you often didn't know you had.
