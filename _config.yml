@@ -1,1 +1,4 @@
-theme: bootstrap
+name: "Jekyll Bootstrap Boilerplate"
+description: "An example Jekyll boilerplate to get you up and running quickly and smoothly"
+url: http://testing.oceania.gg/
+exclude: [ 'README.md' ]
