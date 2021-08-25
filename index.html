@@ -35,7 +35,7 @@ permalink: /
         <ul class="icon-list">
           {% for post in site.posts limit 5 %}
             <li><a href='{{ post.url }}' rel="noopener">{{ post.title }}</a></li>
-          {% endfor %]}
+          {% endfor %}
             <li><a href='{{ posts | absolute_url }}' rel="noopener">Read More</a></li>
         </ul>
       </div>
